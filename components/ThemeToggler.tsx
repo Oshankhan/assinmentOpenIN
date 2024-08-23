@@ -5,7 +5,7 @@ import { FaMoon } from 'react-icons/fa';
 import { BsSunFill } from 'react-icons/bs';
 
 const ThemeToggler = () => {
-  const { theme, setTheme } = useTheme((state) => state);
+  const { theme, setTheme } = useTheme((state:any) => state);
 
   const changeTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
