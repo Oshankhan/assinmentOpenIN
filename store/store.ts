@@ -24,3 +24,14 @@ export const useCollapse =  create<collapseInterface>()((set)=>({
     isCollapseMobile:false,
     setCollapseMobile:(isCollapseMobile)=>set({isCollapseMobile})
 }))
+
+
+interface indexOfSideBar {
+    indexItem: string,
+    setIndexItem: (indexItem: string) => void
+}
+
+export const useIndexOfSideBar= create <indexOfSideBar>()((set)=>({
+    indexItem:"Dashbord",
+    setIndexItem: (indexItem) => set({indexItem})
+}))

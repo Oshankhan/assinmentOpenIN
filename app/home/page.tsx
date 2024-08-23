@@ -1,17 +1,24 @@
 'use client'
-import FileDropArea from '@/components/FileDropArea'
-import React, { useState } from 'react'
-import UploadCSV from './components/UploadCSV'
-import Uploads from './components/Uploads'
+
+import { useIndexOfSideBar } from '@/store/store'
+import Dashbord from './(homePages)/dashboad/page'
+import Upload from './(homePages)/upload/page'
 
 const Home = () => {
-
+  const {indexItem} =useIndexOfSideBar((state)=>state)
   return (
 
-    <div className='h-full w-full bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text flex-col justify-center items-center flex'>
-      <UploadCSV/>
-      <Uploads/>
-    </div>
+    <>
+    {(() => {
+        switch (indexItem) {
+          case 'Dashbord':
+            return <Dashbord/>
+          case 'Upload':
+            return <Upload/>
+          default:
+            return <Dashbord/>
+        }
+      })()}</>
   )
 }
 

@@ -6,34 +6,34 @@ import { SlCalender } from "react-icons/sl";
 
 export const SideBarItems=[{
     id:"1",
-    icons:<MdOutlineSpaceDashboard size={26} color="grey" />,
+    icons:MdOutlineSpaceDashboard ,
     text:"Dashboad"
 },
 {
     id:"2",
-    icons:<MdOutlineFileUpload size={26} color="grey" />,
+    icons:MdOutlineFileUpload,
     text:"Upload"
 },
 {
     id:"3",
-    icons:<FaFileInvoice size={26} color="grey"/>,
+    icons:FaFileInvoice,
     text:"Invoice"
 },{
     id:"4",
-    icons:<AiOutlineSchedule size={26} color="grey"/>,
+    icons:AiOutlineSchedule,
     text:"Schedule"
 },{
     id:"5",
-    icons:<SlCalender size={26} color="grey"/>,
+    icons:SlCalender,
     text:"Calender"
 },{
     id:"6",
-    icons:<MdNotifications size={26} color="grey"/>,
+    icons:MdNotifications,
     text:"Notifications"
 },
 {
     id:"7",
-    icons:<MdSettings size={26} color="grey"/>,
+    icons:MdSettings,
     text:"Settings"
 },
 ]
