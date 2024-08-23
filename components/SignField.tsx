@@ -52,7 +52,7 @@ const SignField = () => {
            
 
             <div className='ml-8 m-4 flex items-center'>
-                <p className='text-sm'>Don't have an account? &nbsp;</p>
+                <p className='text-sm'>Don&apos;t have an account? &nbsp;</p>
                 <a href="/"> Register here</a>
             </div>
 
