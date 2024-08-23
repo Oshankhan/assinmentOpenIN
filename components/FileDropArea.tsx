@@ -39,7 +39,10 @@ const FileDropArea = () => {
         {file ? (
           <p className='text-xs p-4  md:text-base' >{file.name}</p>
         ) : (
-          <div className='text-xs p-4 md:text-base'><p>Upload your excel sheet &nbsp;</p><span onClick={handleClick} className= "text-[#605BFF] cursor-pointer"><p>upload</p></span></div>
+          <div className='text-xs p-4 md:text-base w-full flex items-center justify-center'>
+            <p>Upload your excel sheet &nbsp;</p>
+            <p onClick={handleClick} className= "text-[#605BFF] cursor-pointer">upload</p>
+            </div>
         )}
       </div>
       <button 

@@ -1,34 +1,39 @@
 
+import { MdOutlineSpaceDashboard,MdOutlineFileUpload ,MdNotifications ,MdSettings } from "react-icons/md";
+import { FaFileInvoice } from "react-icons/fa6";
+import { AiOutlineSchedule } from "react-icons/ai";
+import { SlCalender } from "react-icons/sl";
+
 export const SideBarItems=[{
     id:"1",
-    icons:"./sideBarIcons/Document.png",
+    icons:<MdOutlineSpaceDashboard size={22} color="grey" />,
     text:"Dashboad"
 },
 {
     id:"2",
-    icons:"./sideBarIcons/chart.png",
+    icons:<MdOutlineFileUpload size={22} color="grey" />,
     text:"Upload"
 },
 {
     id:"3",
-    icons:"./sideBarIcons/Ticket.png",
+    icons:<FaFileInvoice size={22} color="grey"/>,
     text:"Invoice"
 },{
     id:"4",
-    icons:"./sideBarIcons/Document.png",
+    icons:<AiOutlineSchedule size={22} color="grey"/>,
     text:"Schedule"
 },{
     id:"5",
-    icons:"./sideBarIcons/Calendar.png",
+    icons:<SlCalender size={22} color="grey"/>,
     text:"Calender"
 },{
     id:"6",
-    icons:"./sideBarIcons/Notification.png",
+    icons:<MdNotifications size={22} color="grey"/>,
     text:"Notifications"
 },
 {
     id:"7",
-    icons:"./sideBarIcons/Setting.png",
+    icons:<MdSettings size={22} color="grey"/>,
     text:"Settings"
 },
 ]

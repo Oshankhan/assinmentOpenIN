@@ -13,10 +13,14 @@ export const useTheme = create<themeInterface>()((set)=>({
 
 interface collapseInterface {
     isCollapse: boolean,
-    setCollapse: (collapse: boolean) => void
+    setCollapse: (collapse: boolean) => void,
+    isCollapseMobile: boolean,
+    setCollapseMobile: (collapse: boolean) => void
 }
 
 export const useCollapse =  create<collapseInterface>()((set)=>({
     isCollapse: false,
-    setCollapse: (isCollapse) => set({isCollapse})
+    setCollapse: (isCollapse) => set({isCollapse}),
+    isCollapseMobile:false,
+    setCollapseMobile:(isCollapseMobile)=>set({isCollapseMobile})
 }))
