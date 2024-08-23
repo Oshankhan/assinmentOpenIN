@@ -1,0 +1,34 @@
+
+export const SideBarItems=[{
+    id:"1",
+    icons:"./sideBarIcons/Document.png",
+    text:"Dashboad"
+},
+{
+    id:"2",
+    icons:"./sideBarIcons/chart.png",
+    text:"Upload"
+},
+{
+    id:"3",
+    icons:"./sideBarIcons/Ticket.png",
+    text:"Invoice"
+},{
+    id:"4",
+    icons:"./sideBarIcons/Document.png",
+    text:"Schedule"
+},{
+    id:"5",
+    icons:"./sideBarIcons/Calendar.png",
+    text:"Calender"
+},{
+    id:"6",
+    icons:"./sideBarIcons/Notification.png",
+    text:"Notifications"
+},
+{
+    id:"7",
+    icons:"./sideBarIcons/Setting.png",
+    text:"Settings"
+},
+]
