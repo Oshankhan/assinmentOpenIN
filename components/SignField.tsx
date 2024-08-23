@@ -1,13 +1,19 @@
 "use client"
+import { redirect, useRouter } from 'next/navigation';
 import React, { FormEvent, useState } from 'react'
 
 const SignField = () => {
+    
     const [loginDetials, setloginDetials] = useState({
         name:"",
         password:""
     })
+    const route= useRouter()
     function handleSubmit(event: FormEvent<HTMLFormElement>): void {
         event.preventDefault();
+        console.log("hi");
+        
+       route.push("/home")
     }
     const handleForgetPassword=()=>{
 
@@ -39,12 +45,12 @@ const SignField = () => {
                 Email address
             </label>
             
-            <input type="text" placeholder="Email" className='bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text placeholder-light-text dark:placeholder-dark-text focus:outline-none'/>
+            <input type="text" placeholder="Email"  className='bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text placeholder-light-text dark:placeholder-dark-text focus:outline-none'/>
 
             <label htmlFor="" className='text-base font-bold my-2  text-light-text dark:text-dark-text'>Password</label>
             <input type="password" placeholder='Password'  className='bg-light-background dark:bg-dark-background text-light-text dark:text-dark-text placeholder-light-text dark:placeholder-dark-text focus:outline-none'/>
             <a href="" className='my-2'>Forgot Password</a>
-            <button type='submit' className='w-full h-[30px] bg-[#605BFF] rounded-md text-sm font-semibold mb-3'>Sign In</button>
+            <button type='submit'  className='w-full h-[30px] bg-[#605BFF] rounded-md text-sm font-semibold mb-3'>Sign In</button>
             </form>
             
             </div>
