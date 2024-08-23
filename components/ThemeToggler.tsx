@@ -10,7 +10,15 @@ const ThemeToggler = () => {
   const changeTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
+    localStorage.setItem('theme', newTheme); // Save theme to local storage
   };
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme'); // Get theme from local storage
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, [setTheme]);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -21,7 +29,7 @@ const ThemeToggler = () => {
   }, [theme]);
 
   return (
-    <div className="w-[79px] h-[38px] flex items-center justify-center  bg-light-background dark:bg-dark-background  rounded-full p-2 transition-all duration-300">
+    <div className="w-[79px] h-[38px] flex items-center justify-center bg-light-background dark:bg-dark-background rounded-full p-2 transition-all duration-300">
       <button
         onClick={changeTheme}
         className="relative w-full h-full flex items-center"

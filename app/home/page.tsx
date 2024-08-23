@@ -6,17 +6,18 @@ import Upload from './(homePages)/upload/page'
 
 const Home = () => {
   const {indexItem} =useIndexOfSideBar((state)=>state)
+  console.log(indexItem);
+  
   return (
 
     <>
     {(() => {
         switch (indexItem) {
-          case 'Dashbord':
-            return <Dashbord/>
           case 'Upload':
             return <Upload/>
-          default:
+          case 'Dashbord':
             return <Dashbord/>
+          
         }
       })()}</>
   )

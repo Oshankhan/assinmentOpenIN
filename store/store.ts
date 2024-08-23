@@ -21,7 +21,7 @@ interface collapseInterface {
 export const useCollapse =  create<collapseInterface>()((set)=>({
     isCollapse: false,
     setCollapse: (isCollapse) => set({isCollapse}),
-    isCollapseMobile:false,
+    isCollapseMobile:true,
     setCollapseMobile:(isCollapseMobile)=>set({isCollapseMobile})
 }))
 
@@ -32,6 +32,6 @@ interface indexOfSideBar {
 }
 
 export const useIndexOfSideBar= create <indexOfSideBar>()((set)=>({
-    indexItem:"Dashbord",
+    indexItem:"",
     setIndexItem: (indexItem) => set({indexItem})
 }))
