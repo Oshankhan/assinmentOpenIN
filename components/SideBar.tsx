@@ -67,13 +67,15 @@ const SideBar = () => {
         </div>
                 <div >
                 {SideBarItems?.map((items:SideItems)=>{
-                        return <button  className={`cursor-pointer flex space-x-8 pl-10 */- items-center my-10 mx-5 ${isCollapse?"justify-center":""}`} key={items.id}>
+                        return <div className='items-center '>
+                            <button  className={`cursor-pointer flex space-x-8 pl-10 items-center my-10 mx-5 ${isCollapse?"justify-center":""}`} key={items.id}>
                             
-                            <div>{items.icons}</div>
-                            <p className='text-sm'>{items.text}</p>
+                           {items.icons}
+                            <p className='text-base light:text-dark-text dark:text-dark-text'>{items.text}</p>
                             
                             
                         </button>
+                        </div>
                 })} 
                 </div>
         </div>
