@@ -1,4 +1,4 @@
-import React, { useState, DragEvent, useRef } from 'react';
+import  { useState, DragEvent, useRef } from 'react';
 
 const FileDropArea = () => {
   const [file, setFile] = useState<File | null>(null);

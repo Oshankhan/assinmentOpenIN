@@ -11,7 +11,7 @@ const SignField = () => {
     const route= useRouter()
     function handleSubmit(event: FormEvent<HTMLFormElement>): void {
         event.preventDefault();
-        console.log("hi");
+        
         
        route.push("/home")
     }

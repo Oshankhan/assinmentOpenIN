@@ -1,12 +1,12 @@
 'use client'
 
 import { useIndexOfSideBar } from '@/store/store'
-import Dashbord from './(homePages)/dashboad/page'
-import Upload from './(homePages)/upload/page'
+import Dashbord from './(homePages)/dashboad/dashBoad'
+import Upload from './(homePages)/upload/upload'
 
 const Home = () => {
   const {indexItem} =useIndexOfSideBar((state)=>state)
-  console.log(indexItem);
+  
   
   return (
 
