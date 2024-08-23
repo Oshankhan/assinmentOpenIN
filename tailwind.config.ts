@@ -15,7 +15,8 @@ const config: Config = {
           background: "#EBEBEB", 
           text: "#111827",        
           primary: "#f9f9f9",     
-          secondary: "#9ca3af",   
+          secondary: "#999CA0",
+          border: "#D1D5DB"
         },
         // Dark theme colors
         dark: {
@@ -23,6 +24,7 @@ const config: Config = {
           text: "#f9f9f9",       
           primary: "black",    
           secondary: "#6b7280",  
+           border: "#4B5563"
         },
       },
       backgroundImage: {

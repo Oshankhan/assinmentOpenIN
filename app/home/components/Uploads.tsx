@@ -49,7 +49,7 @@ const Uploads = () => {
     <div className='flex flex-col w-full px-10 '>
 
       <p className='text-2xl mb-8'>Uploads</p>
-      <div className=' w-[90%] bg-green-400 overflow-x-auto rounded-md p-2'>
+      <div className=' w-[90%]  bg-light-secondary dark:bg-dark-primary  overflow-x-auto rounded-md p-2 mb-4'>
         <table className='w-full border-separate border-spacing-y-2 ' >
         <thead >
         <tr>
@@ -62,14 +62,14 @@ const Uploads = () => {
         </thead>
         <tbody  >
           {DummyData.map((values, index) => (
-            <tr key={values.sn} className='bg-yellow-300 m-10 rounded-md'>
+            <tr key={values.sn} className=' bg-light-primary dark:bg-dark-primary  m-10 rounded-md'>
                <td className="py-2 px-4 text-sm">{values.sn}</td>
                 <td className="py-2 px-4 text-sm">{values.links}</td>
                 <td className="py-2 px-4 text-sm">{values.Prefix}</td>
               <td>
                 <div className="relative mr-4">
                   <select
-                    className=" bg-[#0D0D0D] px-4 text-white text-sm w-36 h-8  rounded-lg"
+                    className="   bg-light-secondary dark:bg-dark-secondary text-light-text dark:text-dark-text px-4 text-sm w-36 h-8  rounded-lg"
                     onChange={(e) => handleSelectTag(index, e.target.value)}
                     defaultValue=""
                   >
@@ -87,7 +87,7 @@ const Uploads = () => {
               <td>
                 <div className="flex gap-2 mr-4">
                   {values.selectTag.map((tag, idx) => (
-                    <p key={idx} className="bg-gray-800 text-white py-1 px-2 rounded-full flex items-center">
+                    <p key={idx} className="bg-[#605BFF] text-light-text dark:text-dark-text py-1 px-2 rounded-full flex items-center">
                       {tag}
                       <button
                         className="ml-2 text-white "
